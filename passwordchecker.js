@@ -21,12 +21,12 @@ function newUser(newName, newPass){
             }
         },
         userContain: function (){
-            if ( user.name.indexOf("!") > -1 || user.name.indexOf("#") > -1 || user.name.indexOf("$") > -1){
+            if ( user.name.indexOf("!") >= 0 || user.name.indexOf("#") >= 0 || user.name.indexOf("$") >= 0){
                 return "Your user name cannot contain ! , # or $ \n"
             }
         },
         passwordContain: function (){
-            if ( user.pass.indexOf("!") = -1 || user.pass.indexOf("#") = -1 || user.pass.indexOf("$") = -1){
+            if ( user.pass.indexOf("!") == -1 || user.pass.indexOf("#") == -1 || user.pass.indexOf("$") == -1){
                 return "Your password must contain ! , # or $ \n"
             }
         },
